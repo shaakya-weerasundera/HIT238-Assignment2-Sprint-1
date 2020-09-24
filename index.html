@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/explore.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="styles/images/icons/icon-96x96.png">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">TravelApp</label>
+        <ul>
+            <li><a class="current" href="#">Explore</a></li>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Update</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <section>
+    <div class="container"></div>
+      <form class="search-loaction">
+        <input
+          type="text"
+          name="city"
+          placeholder="Search for a Destination"
+          autocomplete="off"
+          class="form-control text-muted form-rounded p-4 shadow-sm"
+        />
+      </form>      
+        <div class="card-top text-center">
+          <div class="city-name my-3">
+            <h1 class="search-head">Search any Place...</h1>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-mid row">
+            <div class="col-8 text-center temp">
+            </div>
+            <div class="col-4 condition-temp">
+              <p class="condition"></p>
+              <p class="high"></p>
+              <p class="low"></p>
+            </div>
+          </div>
+
+          <div class="icon-container card shadow mx-auto">
+            
+          </div>
+          <div class="card-bottom px-5 py-4 row">
+            <div class="col text-center">
+              <p></p>
+            </div>
+            <div class="col text-center">
+              <p></p>
+            </div>
+          </div>
+        </div>        
+    </section>
+    <script src="scripts/explore.js"></script>
+    <script src="scripts/dest-requests.js"></script>
+</body>
+</html>
